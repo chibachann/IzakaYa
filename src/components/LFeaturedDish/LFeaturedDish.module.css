@@ -1,0 +1,48 @@
+/* LFeaturedDish.module.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Noto+Sans+JP:wght@100..900&family=Shippori+Mincho&display=swap');
+
+
+.section {
+  height: 60vh;
+  background-color: #7b2020;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.imageContainer {
+  background-color: #fff;
+  flex: 1;
+  height: 50vh;
+  overflow: hidden;
+}
+
+.imageContainer img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-family: "Dancing Script", cursive;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-family: "Shippori Mincho", serif;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}

@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Noto+Sans+JP:wght@100..900&family=Shippori+Mincho&display=swap');
+
+.section {
+  position: relative;
+  width: auto;
+  height: 100vh;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titleContainer {
+  text-align: center;
+  z-index: 1;
+}
+
+.title {
+  font-family: "Shippori Mincho", serif;
+  font-size: 4rem;
+  font-weight: 700;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  margin-bottom: 1rem;
+  opacity: 0;
+  animation: fadeInText 2s ease-in-out 1s forwards;
+}
+
+.description {
+  font-family: "Shippori Mincho", serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  animation: fadeInText 2s ease-in-out 1.5s forwards;
+  text-align: left;
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+@keyframes fadeInImage {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    background-position: center center;
+  }
+  .title {
+    font-size: 1.5rem;
+  }
+  .description {
+    font-size: 1rem;
+    max-width: 80%;
+  }
+}

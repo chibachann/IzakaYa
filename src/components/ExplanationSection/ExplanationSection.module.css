@@ -1,0 +1,66 @@
+/* ExplanationSection.module.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Noto+Sans+JP:wght@100..900&family=Shippori+Mincho&display=swap');
+
+
+.section {
+    height: 60vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 4rem;
+    background-color: white;
+  }
+  
+  .content {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .title {
+    margin-bottom: 2rem;
+  }
+  
+  .title h1 {
+    font-size: 2rem;
+    font-family: "Shippori Mincho", serif;
+    margin-bottom: 0;
+    color: #333;
+  }
+  
+  .subtitle {
+    font-family: "Shippori Mincho", serif;
+    font-size: 1.5rem;
+    color: #666;
+    margin-top: 0.5rem;
+  }
+  
+  .explain {
+    font-family: "Shippori Mincho", serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.8;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 480px) {
+    .section {
+      height: 40vh;
+    }
+  
+  
+    .title h1 {
+      font-size: 1.3rem;
+    }
+  
+    .subtitle {
+      font-size: 0.8rem;
+    }
+
+    .explain {
+      font-size: 0.7rem;
+    }
+  }
+  

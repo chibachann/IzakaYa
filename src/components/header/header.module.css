@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap');
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: black;
+  z-index: 1000;
+}
+
+.logoContainer {
+  flex: 0 0 auto;
+}
+
+.logoText {
+  font-family: "Noto Serif JP", serif;
+  font-size: 1.3rem;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.nav {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.navList {
+  list-style: none;
+  font-family: "Noto Serif JP", serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navList li {
+  margin: 0 2rem;
+}
+
+.navList li a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+  font-family: "Noto Serif JP", serif;
+}
+
+.navLink {
+  font-size: 1rem;
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+  font-family: "Noto Serif JP", serif;
+  cursor: pointer;
+}
+
+.navLink:hover {
+  color: #888;
+}
+
+.navList li a:hover {
+  color: #888;
+}
+
+.activeLink {
+  font-weight: bold;
+}
+
+@media (max-width: 1279px) {
+  .header {
+    padding: 0.5rem;
+  }
+  
+  .logoText {
+    font-size: 1.3rem;
+  }
+  
+  .navList li {
+    margin: 0 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 0.5rem;
+  }
+  
+  .logoText {
+    font-size: 1rem;
+  }
+  
+  .navList li {
+    margin: 0 0.5rem;
+  }
+
+  .navList li a {
+    font-size: 0.7rem;
+  }
+
+  .nav {
+    justify-content: end;
+  }
+}
